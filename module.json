@@ -5,7 +5,7 @@
   "description": "Traducción al español del Player's Handbook 2024 para uso en mi campaña",
   "version": "1.0.0",
   "author": "Proditio",
-  "minimumCoreVersion": "10",
+  "minimumCoreVersion": "13",
   "compatibleCoreVersion": "13",
   "languages": [
     {
@@ -14,11 +14,9 @@
       "path": "lang/es.json"
     }
   ],
-  "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
   "scripts": [],
   "styles": [],
   "esmodules": [],
   "packs": [],
   "system": "dnd5e"
 }
-
