@@ -1,5 +1,6 @@
 {
-  "name": "dnd-phb-es",
+  "id": "dnd-phb-es",
+  "name": "DnD-PHB-ES",
   "title": "Traducción PHB 2024",
   "description": "Traducción al español del Player's Handbook 2024 para uso en mi campaña",
   "version": "1.0.0",
@@ -13,10 +14,11 @@
       "path": "lang/es.json"
     }
   ],
-  "manifest": "module.json",
+  "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
   "scripts": [],
   "styles": [],
   "esmodules": [],
   "packs": [],
   "system": "dnd5e"
 }
+
