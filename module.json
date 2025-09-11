@@ -1,23 +1,19 @@
 {
-  "id": "dnd-phb-es",
-  "name": "DnD-PHB-ES",
-  "title": "Traducción PHB 2024",
-  "description": "Traducción al español del Player's Handbook 2024 para uso en mi campaña",
+  "name": "dnd-phb-es",
+  "title": "PHB en Español",
+  "description": "Traducción al español del Player's Handbook para Foundry VTT",
   "version": "1.0.0",
-  "author": "Proditio",
-  "minimumCoreVersion": "13",
-  "compatibleCoreVersion": "13",
-  "manifest": "https://mrproditio.github.io/DnD-PHB-ES/module.json",
-  "languages": [
-    {
-      "lang": "es",
-      "name": "Español",
-      "path": "lang/es.json"
-    }
-  ],
+  "compatibility": {
+    "minimum": "11",
+    "verified": "13"
+  },
   "scripts": [],
-  "styles": [],
   "esmodules": [],
+  "languages": [],
   "packs": [],
-  "system": "dnd5e"
+  "dependencies": [
+    { "name": "babele" }
+  ],
+  "manifest": "",
+  "download": ""
 }
