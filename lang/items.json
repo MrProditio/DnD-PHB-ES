@@ -1,14 +1,20 @@
 {
   "entries": {
     "dnd-players-handbook.items": {
-      "items": {
-        "Longsword": {
-          "name": "Espada larga",
-          "system.description.value": "Un arma versátil muy común entre caballeros y aventureros."
-        },
-        "Chain Mail": {
-          "name": "Cota de malla",
-          "system.description.value": "Una armadura de anillas metálicas que ofrece buena protección."
+      "Longsword": {
+        "name": "Espada larga",
+        "system": {
+          "description": {
+            "value": "Un arma versátil muy común entre caballeros y aventureros."
+          }
+        }
+      },
+      "Chain Mail": {
+        "name": "Cota de malla",
+        "system": {
+          "description": {
+            "value": "Una armadura de anillas metálicas que ofrece buena protección."
+          }
         }
       }
     }
