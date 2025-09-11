@@ -1,19 +1,22 @@
 {
-  "name": "dnd-phb-es",
-  "title": "PHB en Español",
-  "description": "Traducción al español del Player's Handbook para Foundry VTT",
-  "version": "1.0.0",
+  "id": "dnd-phb-es",
+  "title": "Player's Handbook ES",
+  "description": "Traducción al español del Player’s Handbook para Foundry VTT usando Babele",
+  "version": "0.1.0",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
   },
-  "scripts": [],
-  "esmodules": [],
-  "languages": [],
-  "packs": [],
+  "authors": [
+    {
+      "name": "TuNombre",
+      "url": "https://github.com/MrProditio"
+    }
+  ],
+  "url": "https://github.com/MrProditio/DnD-PHB-ES",
+  "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
+  "download": "https://github.com/MrProditio/DnD-PHB-ES/archive/refs/heads/main.zip",
   "dependencies": [
     { "name": "babele" }
-  ],
-  "manifest": "",
-  "download": ""
+  ]
 }

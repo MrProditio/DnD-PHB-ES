@@ -1,0 +1,16 @@
+{
+  "entries": {
+    "phb.spells": {
+      "items": {
+        "Magic Missile": {
+          "name": "Proyectil mágico",
+          "system.description.value": "Creas tres dardos brillantes de energía mágica..."
+        },
+        "Fireball": {
+          "name": "Bola de fuego",
+          "system.description.value": "Un resplandor brillante vuela hasta un punto que elijas..."
+        }
+      }
+    }
+  }
+}
