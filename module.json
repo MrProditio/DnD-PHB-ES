@@ -1,21 +1,22 @@
 {
   "id": "dnd-phb-es",
+  "name": "DnD-PHB-ES",
   "title": "Manual del Jugador 2024 en español",
   "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT",
   "version": "1.0.0",
+  "author": "MrProditio",
   "compatibility": {
     "minimum": "13",
-    "verified": "13"
-  },
-  "authors": [
-    {
-      "name": "MrProditio",
-    }
-  ],
+    "verified": "13",
+    "maximum": "13"
+    },
+  "system": "dnd5e",
+  "systemVersions": ["5.1.8"],
   "scripts": ["babele-register.js"],
   "url": "https://github.com/MrProditio/DnD-PHB-ES",
   "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
   "download": "https://github.com/MrProditio/DnD-PHB-ES/archive/refs/heads/main.zip",
+  "license": "MIT",
   "languages": [{
     "lang": "es",
     "name": "Español",
