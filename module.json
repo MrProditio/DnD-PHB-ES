@@ -1,7 +1,7 @@
 {
   "id": "dnd-phb-es",
-  "title": "Player's Handbook ES",
-  "description": "Traducción al español del Player’s Handbook para Foundry VTT usando Babele",
+  "title": "Manual del Jugador 2024 en español",
+  "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT",
   "version": "0.1.0",
   "compatibility": {
     "minimum": "13",
@@ -13,9 +13,15 @@
       "url": "https://github.com/MrProditio"
     }
   ],
+  "scripts": ["babele-register.js"],
   "url": "https://github.com/MrProditio/DnD-PHB-ES",
   "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
   "download": "https://github.com/MrProditio/DnD-PHB-ES/archive/refs/heads/main.zip",
+  "languages": [{
+    "lang": "es",
+    "name": "Español",
+    "path": "lang/es.json"
+  }],
   "relationships": {
     "requires": [
       {
