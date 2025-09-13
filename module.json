@@ -2,7 +2,7 @@
   "id": "dnd-phb-es",
   "title": "Manual del Jugador 2024 en español",
   "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
