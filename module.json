@@ -10,7 +10,6 @@
   "authors": [
     {
       "name": "MrProditio",
-      "url": "https://github.com/MrProditio"
     }
   ],
   "scripts": ["babele-register.js"],
