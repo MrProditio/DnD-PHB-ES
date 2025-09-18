@@ -1,11 +1,6 @@
 # DnD-PHB-ES
 
-Traducción al español del **Player’s Handbook** para Foundry VTT usando **Babele**.
-
-## Instalación
-1. Copia esta URL de manifiesto: https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json
-2. En Foundry VTT → *Módulos adicionales* → *Instalar módulo*.  
-3. Activa **Babele** y luego este módulo.  
+Traducción al español del **Player’s Handbook** para Foundry VTT usando **Babebele**. 
 
 ## Estado de la traducción
 - [ ] Conjuros
