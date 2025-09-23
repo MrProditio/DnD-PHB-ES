@@ -1,8 +1,50 @@
 {
+  "id": "phb24-and-modules-es",
+  "name": "PHB24-and-Modules-ES",
+  "title": "PHB24 y Módulos en Español",
+  "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT y de módulos compatibles como DFreds Convenient Effects",
+  "version": "1.0.0",
+  "author": "MrProditio",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
+  },
+  "system": "dnd5e",
+  "systemVersions": ["5.1.8"],
+  "esmodules": ["babele-register.js"],
+  "url": "https://github.com/MrProditio/DnD-PHB-ES",
+  "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
+  "download": "https://github.com/MrProditio/DnD-PHB-ES/archive/refs/heads/main.zip",
+  "license": "MIT",
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "translations/PHB24/es"
+    },
+    {
+      "lang": "es-ce",
+      "name": "Español (Convenient Effects)",
+      "path": "translations/CE/es"
+    }
+  ],
+  "relationships": {
+    "requires": [
+      {
+        "id": "babele",
+        "type": "module"
+      }
+    ]
+  }
+}
+
+
+/**{
   "id": "dnd-phb-es",
-  "name": "DnD-PHB-ES",
-  "title": "Manual del Jugador 2024 en español",
-  "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT",
+  "name": "DnD5e24-&-Modules-ES",
+  "title": "Material para Foundry Vtt en español",
+  "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT, y de varios módulos",
   "version": "1.0.0",
   "author": "MrProditio",
   "compatibility": {
@@ -12,7 +54,7 @@
     },
   "system": "dnd5e",
   "systemVersions": ["5.1.8"],
-  "scripts": ["babele-register.js"],
+  "esmodules": ["babele-register.js"],
   "url": "https://github.com/MrProditio/DnD-PHB-ES",
   "manifest": "https://raw.githubusercontent.com/MrProditio/DnD-PHB-ES/main/module.json",
   "download": "https://github.com/MrProditio/DnD-PHB-ES/archive/refs/heads/main.zip",
@@ -31,3 +73,4 @@
     ]
   }
 }
+**/

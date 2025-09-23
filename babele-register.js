@@ -1,9 +1,31 @@
 Hooks.once("init", () => {
   if (typeof Babele !== "undefined") {
-    Babele.get().register({
-      module: "dnd5e-es",
+    const babele = Babele.get();
+
+    // Registro del Player’s Handbook 2024
+    babele.register({
+      module: "dnd-players-handbook",
       lang: "es",
-      dir: "lang"
+      dir: "translations/PHB24/es"
+    });
+
+    // Registro de DFreds Convenient Effects
+    babele.register({
+      module: "dfreds-convenient-effects",
+      lang: "es",
+      dir: "translations/CE/es"
     });
   }
 });
+
+
+
+/**Hooks.once("init", () => {
+  if (typeof Babele !== "undefined") {
+    Babele.get().register({
+      module: "dnd5e-es",
+      lang: "es",
+      dir: "translations"
+    });
+  }
+});**/
