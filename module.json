@@ -3,7 +3,7 @@
   "name": "PHB24-and-Modules-ES",
   "title": "PHB24 y Módulos en Español",
   "description": "Traducción al español del Player’s Handbook 2024 para Foundry VTT y de módulos compatibles como DFreds Convenient Effects",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "MrProditio",
   "compatibility": {
     "minimum": "13",
@@ -21,12 +21,12 @@
     {
       "lang": "es",
       "name": "Español",
-      "path": "translations/PHB24/es"
+      "path": "translations/PHB24"
     },
     {
-      "lang": "es-ce",
+      "lang": "es",
       "name": "Español (Convenient Effects)",
-      "path": "translations/CE/es"
+      "path": "translations/CE"
     }
   ],
   "relationships": {
