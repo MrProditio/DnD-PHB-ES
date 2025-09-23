@@ -4,14 +4,14 @@ Hooks.once("init", () => {
 
     // Registro de dnd-players-handbook
     babele.register({
-      module: "dnd-players-handbook",
+  module: "phb24-and-modules-es",
       lang: "es",
       dir: "translations/dnd-players-handbook"
     });
 
     // Registro de dfreds-convenient-effects
     babele.register({
-      module: "dfreds-convenient-effects",
+  module: "phb24-and-modules-es",
       lang: "es",
       dir: "translations/dfreds-convenient-effects"
     });
