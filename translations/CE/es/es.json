@@ -1,0 +1,890 @@
+{
+    "ConvenientEffects": {
+        "AppName": "Efectos Convenientes",
+        "BackupAppName": "Copia de seguridad — Efectos Convenientes",
+
+        "Setting": {
+            "Player": "Jugador",
+            "TrustedPlayer": "Jugador de confianza",
+            "AssistantGM": "Asistente del DJ",
+            "GameMaster": "Director de Juego",
+            "None": "Ninguno",
+
+            "AppControlsPermissionName": "Permisos: Controles de la app",
+            "AppControlsPermissionHint": "Define el nivel mínimo de permiso para ver y aplicar los Efectos Convenientes mediante el botón en los controles del token. Si se establece en Ninguno, el botón se desactivará por completo.",
+
+            "CreateFoldersPermissionName": "Permisos: Crear carpetas",
+            "CreateFoldersPermissionHint": "Define el nivel mínimo de permiso para crear nuevas carpetas de efectos en la aplicación Efectos Convenientes. Si se establece en Ninguno, el botón de creación se desactivará por completo. Ten en cuenta que el usuario también debe tener permiso en Foundry para crear objetos para que esto funcione."
+        },
+
+        "Keybinding": {
+            "ToggleAppName": "Alternar aplicación Efectos Convenientes",
+            "ToggleAppHint": "Activa la aplicación Efectos Convenientes en la barra lateral.",
+            "ToggleAppPopoutName": "Alternar ventana emergente Efectos Convenientes",
+            "ToggleAppPopoutHint": "Abre la ventana emergente de la aplicación si está cerrada, o la cierra si está abierta."
+        },
+
+        "SearchEffects": "Buscar efectos",
+        "ViewBackups": "Ver copias de seguridad",
+        "ShowFolder": "Mostrar carpeta",
+        "HideFolder": "Ocultar carpeta",
+        "ShowHiddenEffects": "Mostrar efectos ocultos",
+        "ShowNestedEffects": "Mostrar efectos anidados",
+        "PrioritizeTargets": "Priorizar objetivos",
+        "NewEffect": "Nuevo efecto",
+        "EditEffect": "Editar efecto",
+        "DeleteEffect": "Eliminar efecto",
+        "ShowEffect": "Mostrar efecto",
+        "HideEffect": "Ocultar efecto",
+        "ToggleConvenientEffect": "Alternar efecto conveniente",
+        "ToggleAsOverlay": "Alternar como superposición",
+        "ToggleStatusEffect": "Alternar efecto de estado",
+        "ResetSystemEffects": "Restablecer efectos del sistema",
+        "ResetSystemEffectsWarning": "Esto restablecerá completamente los efectos incluidos en el sistema, deshaciendo cualquier creación, eliminación o edición personalizada.",
+        "SelectEffect": "Seleccionar efecto",
+        "NoPermissionToRemoveEffect": "No tienes permiso para eliminar el efecto {effectName} de {originalFolderName}. Efecto duplicado en {newFolderName}",
+        "NoPermissionToAddEffect": "No tienes permiso para añadir el efecto {effectName} a la carpeta {newFolderName}",
+
+        "FolderHidden": "Carpeta oculta",
+        "Passive": "Pasivo",
+        "EffectHidden": "Efecto oculto",
+        "HasNestedEffects": "Tiene efectos anidados",
+        "IsNestedEffect": "Es efecto anidado",
+        "StatusEffect": "Efecto de estado",
+        "MidiQolEffects": "Efectos Midi-QoL",
+        "AtlEffects": "Efectos ATL",
+        "TokenMagicEffects": "Efectos Token Magic",
+
+        "Config": {
+            "Title": "Configuración de Convenient",
+            "FoundryEffectIdLabel": "ID del efecto en Foundry",
+            "FoundryEffectIdHint": "Este es el ID del efecto en Foundry y puede usarse para localizar, añadir o eliminar un efecto.",
+            "ConvenientEffectIdLabel": "ID de EfectoConveniente",
+            "ConvenientEffectIdHint": "Este es el ID del efecto en Convenient y puede usarse para localizar, añadir o eliminar un efecto.",
+            "TemporaryLabel": "Temporal",
+            "TemporaryHint": "Si está marcado, este efecto siempre se marcará como temporal, aunque no tenga duración o estado.",
+            "ViewableLabel": "Visible",
+            "ViewableHint": "Si está marcado, este efecto siempre se mostrará en la aplicación.",
+            "DynamicLabel": "Dinámico",
+            "DynamicHint": "Si está marcado, este efecto aplicará cambios dinámicos según los datos del actor. Esto no se puede cambiar y se usa para casos de efectos muy específicos.",
+            "NestedEffectsLabel": "Efectos anidados",
+            "NestedEffectsHint": "Los efectos anidados que se mostrarán como opciones cuando el efecto sea añadido o eliminado.",
+            "SubEffectsLabel": "Sub-efectos",
+            "SubEffectsHint": "Los sub-efectos que se aplicarán en relación con este efecto. Si se elimina este efecto, todos los sub-efectos se eliminarán automáticamente.",
+            "OtherEffectsLabel": "Otros efectos",
+            "OtherEffectsHint": "Otros efectos que se aplicarán en relación con este efecto. Si se elimina este efecto, los otros efectos no se eliminarán automáticamente.",
+
+            "IDsTab": "IDs",
+            "FlagsTab": "Flags",
+            "DependentEffectsTab": "Efectos dependientes"
+        },
+
+        "Initializing": "Inicializando Efectos Convenientes...",
+        "FinishedInitializing": "Finalizada la inicialización de Efectos Convenientes",
+
+        "Dnd": {
+            "Folders": {
+                "Conditions": "Condiciones",
+                "Spells": "Conjuros",
+                "ClassFeatures": "Rasgos de clase",
+                "Equipment": "Equipo",
+                "MagicItems": "Objetos mágicos",
+                "Other": "Otros"
+            },
+            "AcidArrow": {
+                "name": "Flecha Ácida",
+                "description": "Provoca 2d4 de daño ácido al final del siguiente turno"
+            },
+            "Aid": {
+                "name": "Ayuda",
+                "description": "Aumenta los puntos de vida actuales y máximos durante 8 horas"
+            },
+            "AlterSelf": {
+                "name": "Alterar aspecto",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "AmuletOfHealth": {
+                "name": "Amuleto de Salud",
+                "description": "Mejora la Constitución a 19"
+            },
+            "AntilifeShell": {
+                "name": "Caparazón antividente",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "ArcaneHand": {
+                "name": "Mano arcana",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "Bane": {
+                "name": "Maldición (Bane)",
+                "description": "Resta 1d4 a todas las tiradas de salvación y ataques durante 1 minuto"
+            },
+            "BardicInspiration": {
+                "name": "Inspiración de bardo",
+                "description": "Añade un dado a una única prueba de habilidad, tirada de ataque o tirada de salvación en los próximos 10 minutos"
+            },
+            "BardicInspirationD10": {
+                "name": "Inspiración de bardo (d10)",
+                "description": "Para bardos de nivel 10 a 14"
+            },
+            "BardicInspirationD12": {
+                "name": "Inspiración de bardo (d12)",
+                "description": "Para bardos de nivel 15 a 20"
+            },
+            "BardicInspirationD6": {
+                "name": "Inspiración de bardo (d6)",
+                "description": "Para bardos de nivel 1 a 4"
+            },
+            "BardicInspirationD8": {
+                "name": "Inspiración de bardo (d8)",
+                "description": "Para bardos de nivel 5 a 9"
+            },
+            "Barkskin": {
+                "name": "Piel de corteza",
+                "description": "Fija la CA a 16 durante 1 hora"
+            },
+            "BeaconOfHope": {
+                "name": "Faro de esperanza",
+                "description": "Otorga ventaja en salvaciones de Sabiduría y en tiradas de muerte durante 1 minuto"
+            },
+            "BearsEndurance": {
+                "name": "Resistencia del oso",
+                "description": "Ventaja en comprobaciones de Constitución y 2d6 de puntos de vida temporales durante 1 hora"
+            },
+            "BeltOfDwarvenkind": {
+                "name": "Cinturón de la estirpe de los enanos",
+                "description": "- Añade +2 a Constitución hasta un máximo de 20<br/>- Otorga resistencia al veneno<br/>- Otorga visión en la oscuridad<br/>- Añade el idioma enano"
+            },
+            "BeltOfGiantStrength": {
+                "name": "Cinturón de fuerza gigante",
+                "description": "Elige entre Cinturón de fuerza gigante de colina, hielo, piedra, fuego, nube o tormenta"
+            },
+            "BeltOfHillGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de colina",
+                "description": "Aumenta la Fuerza a 21"
+            },
+            "BeltOfFrostGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de escarcha",
+                "description": "Aumenta la Fuerza a 23"
+            },
+            "BeltOfStoneGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de piedra",
+                "description": "Aumenta la Fuerza a 23"
+            },
+            "BeltOfFireGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de fuego",
+                "description": "Aumenta la Fuerza a 25"
+            },
+            "BeltOfCloudGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de las nubes",
+                "description": "Aumenta la Fuerza a 27"
+            },
+            "BeltOfStormGiantStrength": {
+                "name": "Cinturón de fuerza de gigante de la tormenta",
+                "description": "Aumenta la Fuerza a 29"
+            },
+            "BlackTentacles": {
+                "name": "Tentáculos negros",
+                "description": "Aplica la condición Agarrado (Restraint) durante 1 minuto"
+            },
+            "Bless": {
+                "name": "Bendición",
+                "description": "Añade 1d4 a todas las tiradas de salvación y ataques durante 1 minuto"
+            },
+            "Blinded": {
+                "name": "Cegado",
+                "description": "- Una criatura cegada no puede ver y falla automáticamente cualquier prueba de habilidad que requiera visión.<br/>- Las tiradas de ataque contra la criatura tienen ventaja y las tiradas de ataque de la criatura tienen desventaja."
+            },
+            "BlindingSickness": {
+                "name": "Enfermedad cegadora",
+                "description": "Desventaja en comprobaciones de Sabiduría y en salvaciones de Sabiduría durante 7 días"
+            },
+            "Blindness": {
+                "name": "Ceguera",
+                "description": "Desventaja en tiradas de ataque y otorga ventaja a los que atacan durante 1 minuto"
+            },
+            "BlindnessDeafness": {
+                "name": "Ceguera/Sordera",
+                "description": "Elige entre ceguera o sordera"
+            },
+            "Blur": {
+                "name": "Desdibujar",
+                "description": "Otorga desventaja a quienes intentan atacarle durante 1 minuto"
+            },
+            "BonusAction": {
+                "name": "Acción adicional",
+                "description": "Sin efectos activos; expira al inicio del turno"
+            },
+            "BootsOfElvenkind": {
+                "name": "Botas de elfo",
+                "description": "Ventaja en pruebas de sigilo"
+            },
+            "BootsOfTheWinterlands": {
+                "name": "Botas de las tierras invernales",
+                "description": "Otorgan resistencia al frío"
+            },
+            "BroochOfShielding": {
+                "name": "Broche de protección",
+                "description": "Otorga resistencia al daño por fuerza"
+            },
+            "BracersOfArchery": {
+                "name": "Brazales de arquería",
+                "description": "- Añaden +2 al daño de ataques a distancia<br/>- Añaden competencia con arco largo y arco corto"
+            },
+            "BracersOfDefense": {
+                "name": "Brazales de defensa",
+                "description": "- Añaden +2 a la Clase de Armadura"
+            },
+            "BullsStrength": {
+                "name": "Fuerza del toro",
+                "description": "Ventaja en comprobaciones de Fuerza y dobla la capacidad de carga máxima durante 1 hora"
+            },
+            "BullseyeLantern": {
+                "name": "Linterna de puntería",
+                "description": "Añade luz concentrada en un cono de 60 grados durante 6 horas (requiere ATL)"
+            },
+            "Candle": {
+                "name": "Vela",
+                "description": "Añade luz de vela durante 1 hora (requiere ATL)"
+            },
+            "CatsGrace": {
+                "name": "Destreza del gato",
+                "description": "Ventaja en comprobaciones de Destreza durante 1 hora"
+            },
+            "ChannelDivinitySacredWeapon": {
+                "name": "Canalizar divinidad: Arma sagrada",
+                "description": "Añade el modificador de Carisma (mínimo +1) a todas las tiradas de ataque con arma y emite luz 20/40 durante 1 minuto (requiere ATL)"
+            },
+            "ChannelDivinityTurnTheUnholy": {
+                "name": "Canalizar divinidad: Reprender a los impíos",
+                "description": "Sin efectos activos y dura 1 minuto. Expira al recibir daño."
+            },
+            "ChannelDivinityTurnUndead": {
+                "name": "Canalizar divinidad: Aterrorizar a los no-muertos",
+                "description": "Sin efectos activos y dura 1 minuto. Expira al recibir daño."
+            },
+            "CharmPerson": {
+                "name": "Encantar persona",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "Charmed": {
+                "name": "Fascinado",
+                "description": "- Una criatura bajo el efecto de encantamiento no puede atacar al encantador ni dirigir acciones dañinas contra él.<br/>- El encantador tiene ventaja en cualquier prueba de habilidad para interactuar socialmente con la criatura."
+            },
+            "CloakOfDisplacement": {
+                "name": "Capa de desplazamiento",
+                "description": "Otorga desventaja a quienes intentan atacarle"
+            },
+            "CloakOfElvenkind": {
+                "name": "Capa de sigilo élfico",
+                "description": "Ventaja en pruebas de sigilo"
+            },
+            "CloakOfProtection": {
+                "name": "Capa de protección",
+                "description": "Añade +1 a la CA y +1 a todas las tiradas de salvación"
+            },
+            "CloakOfTheMantaRay": {
+                "name": "Capa del mantarraya",
+                "description": "Otorga velocidad de nado de 60 pies"
+            },
+            "Command": {
+                "name": "Orden",
+                "description": "Sin efectos activos y dura hasta el final del siguiente turno"
+            },
+            "ComprehendLanguages": {
+                "name": "Comprender idiomas",
+                "description": "Permite entender todos los idiomas durante 1 hora"
+            },
+            "Concentrating": {
+                "name": "Concentrando",
+                "description": "Algunos conjuros requieren mantener la concentración. Si la pierdes, el conjuro termina."
+            },
+            "Contagion": {
+                "name": "Contagio",
+                "description": "Elige entre fiebre ciega, fiebre pútrida, podredumbre de carne, incendio mental, convulsiones o fatalidad viscosa"
+            },
+            "CoverHalf": {
+                "name": "Cobertura (Mitad)",
+                "description": "Añade +2 a la CA y a las tiradas de salvación de Destreza"
+            },
+            "CoverThreeQuarters": {
+                "name": "Cobertura (Tres cuartos)",
+                "description": "Añade +5 a la CA y a las tiradas de salvación de Destreza"
+            },
+            "CoverTotal": {
+                "name": "Cobertura total",
+                "description": "Hace que todos los ataques fallen automáticamente"
+            },
+            "Darkvision": {
+                "name": "Visión en la oscuridad",
+                "description": "Aumenta la visión en la oscuridad a 60 pies durante 8 horas"
+            },
+            "Dead": {
+                "name": "Muerto",
+                "description": "Sin efectos activos"
+            },
+            "Deafened": {
+                "name": "Ensordecido",
+                "description": "- Una criatura ensordecida no puede oír y falla automáticamente cualquier prueba de habilidad que requiera audición."
+            },
+            "Deafness": {
+                "name": "Sordera",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "DisguiseSelf": {
+                "name": "Disfrazarse",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "DivineFavor": {
+                "name": "Favor divino",
+                "description": "Añade 1d4 de daño radiante a los ataques de arma durante 1 minuto"
+            },
+            "DivineWord": {
+                "name": "Palabra divina",
+                "description": "Aplica efectos variados según los puntos de golpe restantes",
+                "dead": "Muerto al instante",
+                "stunned": "Aturdido, cegado y ensordecido durante 1 hora",
+                "blinded": "Ensordecido y cegado durante 10 minutos",
+                "deafened": "Ensordecido durante 1 minuto"
+            },
+            "Dodge": {
+                "name": "Esquivar",
+                "description": "Otorga desventaja a los que le atacan y ventaja en tiradas de salvación de Destreza hasta el siguiente turno"
+            },
+            "EaglesSplendor": {
+                "name": "Esplendor del águila",
+                "description": "Ventaja en comprobaciones de Carisma durante 1 hora"
+            },
+            "Encumbered": {
+                "name": "Cargado",
+                "description": "Reduce la velocidad en 10 pies"
+            },
+            "EnhanceAbility": {
+                "name": "Mejorar habilidad",
+                "description": "Elige entre Resistencia del oso, Fuerza del toro, Destreza del gato, Esplendor del águila, Astucia del zorro u Sabiduría del búho"
+            },
+            "Enlarge": {
+                "name": "Agrandar",
+                "description": "Añade 1d4 al daño y ventaja en comprobaciones y salvaciones de Fuerza durante 1 minuto"
+            },
+            "EnlargeReduce": {
+                "name": "Agrandar/Reducir",
+                "description": "Elige entre Agrandar o Reducir"
+            },
+            "Exhaustion1": {
+                "name": "Agotamiento 1",
+                "description": "Desventaja en comprobaciones de habilidad"
+            },
+            "Exhaustion2": {
+                "name": "Agotamiento 2",
+                "description": "Desventaja en comprobaciones de habilidad y velocidad reducida a la mitad"
+            },
+            "Exhaustion3": {
+                "name": "Agotamiento 3",
+                "description": "Desventaja en comprobaciones de habilidad, velocidad reducida a la mitad y desventaja en ataques y salvaciones"
+            },
+            "Exhaustion4": {
+                "name": "Agotamiento 4",
+                "description": "Desventaja en comprobaciones de habilidad, velocidad reducida a la mitad, desventaja en ataques y salvaciones, y máximo de puntos de vida reducido a la mitad"
+            },
+            "Exhaustion5": {
+                "name": "Agotamiento 5",
+                "description": "Desventaja en comprobaciones de habilidad, la velocidad es 0, desventaja en ataques y salvaciones, y máximo de puntos de vida reducido a la mitad"
+            },
+            "EyesOfTheEagle": {
+                "name": "Ojos del águila",
+                "description": "Ventaja en pruebas de Percepción"
+            },
+            "FaerieFire": {
+                "name": "Fuego feérico",
+                "description": "Otorga ventaja a todos los atacantes contra las criaturas afectadas durante 1 minuto"
+            },
+            "FalseLife": {
+                "name": "Vida falsa",
+                "description": "Concede puntos de vida temporales por 1 hora"
+            },
+            "FeatherFall": {
+                "name": "Caída pluma",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "Feeblemind": {
+                "name": "Embatenimiento mental",
+                "description": "Reduce Inteligencia y Carisma a 1 hasta que se cure"
+            },
+            "FilthFever": {
+                "name": "Fiebre pútrida",
+                "description": "Desventaja en comprobaciones de Fuerza, salvaciones de Fuerza y ataques que usen Fuerza durante 7 días"
+            },
+            "FindThePath": {
+                "name": "Encuentra el camino",
+                "description": "Sin efectos activos y dura 1 día"
+            },
+            "FireShield": {
+                "name": "Escudo ígneo",
+                "description": "Elige entre resistencia al frío o al fuego"
+            },
+            "FireShieldColdResistance": {
+                "name": "Escudo ígneo (resistencia al frío)",
+                "description": "Otorga resistencia al frío durante 10 minutos"
+            },
+            "FireShieldFireResistance": {
+                "name": "Escudo ígneo (resistencia al fuego)",
+                "description": "Otorga resistencia al fuego durante 10 minutos"
+            },
+            "Flanked": {
+                "name": "Flanqueado",
+                "description": "Otorga ventaja a todos los atacantes cuerpo a cuerpo"
+            },
+            "Flanking": {
+                "name": "Flanqueo",
+                "description": "Otorga ventaja en tiradas de ataque cuerpo a cuerpo"
+            },
+            "FleshRot": {
+                "name": "Podredumbre de carne",
+                "description": "Desventaja en comprobaciones de Carisma y vulnerabilidad a todo daño"
+            },
+            "Fly": {
+                "name": "Vuelo",
+                "description": "Incrementa la velocidad de vuelo a 60 pies durante 10 minutos"
+            },
+            "Foresight": {
+                "name": "Clarividencia",
+                "description": "Ventaja en ataques, comprobaciones y salvaciones; desventaja a los que le atacan durante 8 horas"
+            },
+            "FoxsCunning": {
+                "name": "Astucia del zorro",
+                "description": "Ventaja en comprobaciones de Inteligencia durante 1 hora"
+            },
+            "FreedomOfMovement": {
+                "name": "Libertad de movimiento",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "Frightened": {
+                "name": "Atemorizado",
+                "description": "- Una criatura asustada tiene desventaja en comprobaciones y tiradas de ataque mientras la fuente de su miedo esté a la vista.<br/>- La criatura no puede moverse voluntariamente hacia la fuente de su miedo."
+            },
+            "GauntletsOfOgrePower": {
+                "name": "Guanteletes de fuerza de ogro",
+                "description": "Aumenta la Fuerza a 19"
+            },
+            "GlobeOfInvulnerability": {
+                "name": "Globo de invulnerabilidad",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "GogglesOfNight": {
+                "name": "Gafas de la noche",
+                "description": "Añade 60 pies de visión en la oscuridad"
+            },
+            "Grappled": {
+                "name": "Agarrado",
+                "description": "- La velocidad de una criatura agarrada es 0 y no puede beneficiarse de bonificaciones a la velocidad.<br/>- La condición termina si el agarrador queda incapacitado o si la criatura es apartada del alcance del agarrador."
+            },
+            "GreatWeaponMaster": {
+                "name": "Maestro de armas pesadas",
+                "description": "Resta 5 a los ataques cuerpo a cuerpo pero añade 10 al daño cuerpo a cuerpo"
+            },
+            "GreaterInvisibility": {
+                "name": "Invisibilidad superior",
+                "description": "Ventaja en ataques mientras dificulta atacar al objetivo; dura 1 minuto"
+            },
+            "Guidance": {
+                "name": "Guía",
+                "description": "Añade 1d4 a una sola prueba de habilidad durante 1 minuto"
+            },
+            "GuidingBolt": {
+                "name": "Proyectil guía",
+                "description": "Otorga ventaja al siguiente atacante o hasta el final del siguiente turno"
+            },
+            "Haste": {
+                "name": "Prisa",
+                "description": "Duplica velocidad, añade +2 a CA y ventaja en salvaciones de Destreza por 1 minuto"
+            },
+            "HeadbandOfIntellect": {
+                "name": "Cinta de intelecto",
+                "description": "Fija Inteligencia en 19"
+            },
+            "HeavilyEncumbered": {
+                "name": "Muy cargado",
+                "description": "Reduce velocidad en 20 pies, desventaja en tiradas de ataque y desventaja en salvaciones de Fuerza, Destreza y Constitución"
+            },
+            "HeroesFeast": {
+                "name": "Banquete de héroes",
+                "description": "Inmunidad al veneno y al miedo, ventaja en salvaciones de Sabiduría, y aumento del máximo de PV en 2d10 durante 24 horas"
+            },
+            "Heroism": {
+                "name": "Heroísmo",
+                "description": "Inmunidad al miedo durante 1 minuto"
+            },
+            "HideousLaughter": {
+                "name": "Risa histérica",
+                "description": "Aplica las condiciones Incapacitado y Prono durante 1 minuto"
+            },
+            "HoldMonster": {
+                "name": "Sujetar monstruo",
+                "description": "Aplica la condición Paralizado durante 1 minuto"
+            },
+            "HoldPerson": {
+                "name": "Sujetar persona",
+                "description": "Aplica la condición Paralizado durante 1 minuto"
+            },
+            "HolyAura": {
+                "name": "Aura sagrada",
+                "description": "Ventaja en salvaciones, desventaja a los que atacan y emite luz tenue de radio 5 (requiere ATL) durante 1 minuto"
+            },
+            "HoodedLantern": {
+                "name": "Linterna con capucha",
+                "description": "Añade luz con capucha durante 6 horas (requiere ATL)"
+            },
+            "HuntersMark": {
+                "name": "Marca del cazador",
+                "description": "Sin efectos activos y dura hasta que se retire"
+            },
+            "Incapacitated": {
+                "name": "Incapacitado",
+                "description": "Una criatura incapacitada no puede realizar acciones ni reacciones"
+            },
+            "Inspiration": {
+                "name": "Inspiración",
+                "description": "Ventaja en todo y expira tras usarla en cualquier acción, tirada o comprobación"
+            },
+            "Invisibility": {
+                "name": "Invisibilidad",
+                "description": "Ventaja en el siguiente ataque, desventaja a los que atacan al objetivo; dura 1 hora o hasta que ataque"
+            },
+            "Invisible": {
+                "name": "Invisible (estado)",
+                "description": "- Una criatura invisible es imposible de ver sin magia o sentidos especiales. Está fuertemente oscurecida a efectos de ocultación.<br/>- Las tiradas de ataque contra la criatura tienen desventaja y las tiradas de ataque de la criatura tienen ventaja."
+            },
+            "IrresistibleDance": {
+                "name": "Danza irresistible",
+                "description": "Velocidad cero, desventaja en salvaciones de Destreza y en ataques, y ventaja a los atacantes durante 1 minuto"
+            },
+            "Jump": {
+                "name": "Salto",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "KiEmptyBody": {
+                "name": "Ki: Cuerpo vacío",
+                "description": "Ventaja en ataques, desventaja a los que atacan y resistencia a todo daño excepto fuerza durante 1 minuto"
+            },
+            "KiPatientDefense": {
+                "name": "Ki: Defensa paciente",
+                "description": "Desventaja a los que atacan y ventaja en salvaciones de Destreza hasta el siguiente turno"
+            },
+            "Lantern": {
+                "name": "Linterna",
+                "description": "Añade luz de linterna durante 6 horas (requiere ATL)"
+            },
+            "Light": {
+                "name": "Luz",
+                "description": "Emite luz 20/40 durante 1 hora (requiere ATL)"
+            },
+            "Longstrider": {
+                "name": "Paso largo",
+                "description": "Aumenta la velocidad en 10 pies durante 1 hora"
+            },
+            "MageArmor": {
+                "name": "Armadura de mago",
+                "description": "Establece la CA en 13 + modificador de Destreza durante 8 horas"
+            },
+            "MantleOfSpellResistance": {
+                "name": "Manto de resistencia a conjuros",
+                "description": "Ventaja en salvaciones contra conjuros"
+            },
+            "MindBlank": {
+                "name": "Mente en blanco",
+                "description": "Inmunidad al daño psíquico durante 24 horas"
+            },
+            "Mindfire": {
+                "name": "Fuego mental",
+                "description": "Desventaja en comprobaciones y salvaciones de Inteligencia durante 7 días"
+            },
+            "MirrorImage": {
+                "name": "Imagen espejo",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "OwlsWisdom": {
+                "name": "Sabiduría del búho",
+                "description": "Ventaja en comprobaciones de Sabiduría durante 1 hora"
+            },
+            "Paralyzed": {
+                "name": "Paralizado",
+                "description": "- Una criatura paralizada está incapacitada, no puede moverse ni hablar y falla automáticamente salvaciones de Fuerza y Destreza.<br/>- Las tiradas de ataque contra la criatura tienen ventaja.<br/>- Cualquier ataque que golpee a la criatura y provenga de un atacante a 5 pies es un golpe crítico."
+            },
+            "PassWithoutTrace": {
+                "name": "Pasar sin rastro",
+                "description": "Aumenta el sigilo en +10 durante 1 hora"
+            },
+            "PeriaptOfHealth": {
+                "name": "Amuleto de salud",
+                "description": "Otorga inmunidad a enfermedades"
+            },
+            "PeriaptOfProofAgainstPoison": {
+                "name": "Amuleto contra el veneno",
+                "description": "Otorga inmunidad al daño por veneno y a la condición Envenenado"
+            },
+            "Petrified": {
+                "name": "Petrificado",
+                "description": "- Una criatura petrificada se transforma (y los objetos no mágicos que lleve) en una sustancia inanimada (por lo general piedra). Su peso aumenta por diez y deja de envejecer.<br/>- Está incapacitada, no puede moverse ni hablar y es inconsciente.<br/>- Las tiradas de ataque contra la criatura tienen ventaja.<br/>- La criatura tiene resistencia a todo daño.<br/>- La criatura es inmune al veneno y a las enfermedades; los efectos ya en su sistema quedan suspendidos."
+            },
+            "Poisoned": {
+                "name": "Envenenado",
+                "description": "- Una criatura envenenada tiene desventaja en tiradas de ataque y comprobaciones de habilidad."
+            },
+            "Prone": {
+                "name": "Prono",
+                "description": "- Una criatura prono sólo puede desplazarse reptando salvo que se ponga de pie, lo que elimina la condición.<br/>- Tiene desventaja en tiradas de ataque.<br/>- Los ataques contra la criatura tienen ventaja si el atacante está a 5 pies; en caso contrario, tienen desventaja."
+            },
+            "ProtectionFromAcid": {
+                "name": "Protección contra ácido",
+                "description": "Otorga resistencia al ácido durante 1 hora"
+            },
+            "ProtectionFromCold": {
+                "name": "Protección contra frío",
+                "description": "Otorga resistencia al frío durante 1 hora"
+            },
+            "ProtectionFromEnergy": {
+                "name": "Protección contra energía",
+                "description": "Elige entre ácido, frío, fuego, relámpago o trueno"
+            },
+            "ProtectionFromEvilAndGood": {
+                "name": "Protección contra lo malo y lo bueno",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "ProtectionFromFire": {
+                "name": "Protección contra fuego",
+                "description": "Otorga resistencia al fuego durante 1 hora"
+            },
+            "ProtectionFromLightning": {
+                "name": "Protección contra rayos",
+                "description": "Otorga resistencia a rayos durante 1 hora"
+            },
+            "ProtectionFromPoison": {
+                "name": "Protección contra veneno",
+                "description": "Otorga resistencia al veneno durante 1 hora (no garantiza ventaja en salvaciones contra veneno)"
+            },
+            "ProtectionFromThunder": {
+                "name": "Protección contra trueno",
+                "description": "Otorga resistencia al trueno durante 1 hora"
+            },
+            "Rage": {
+                "name": "Cólera",
+                "description": "Ventaja en comprobaciones y salvaciones de Fuerza, bonificación de daño cuerpo a cuerpo según nivel de bárbaro y resistencia a perforante, contuso y cortante durante 1 minuto. Maneja resistencias de Camino del Espíritu Guardián si procede.",
+                "notABarbarian": "El actor seleccionado no es un Bárbaro",
+                "bearTotemFeat": "Rasgo Tótem: Oso"
+            },
+            "RangedDisadvantage": {
+                "name": "Desventaja a distancia",
+                "description": "Desventaja en ataques a distancia"
+            },
+            "RayOfFrost": {
+                "name": "Rayo de escarcha",
+                "description": "Reduce la velocidad en 10 pies"
+            },
+            "Reaction": {
+                "name": "Reacción",
+                "description": "Sin efectos activos; expira al inicio del turno"
+            },
+            "Ready": {
+                "name": "Preparado",
+                "description": "Sin efectos activos; expira al inicio del turno"
+            },
+            "RecklessAttack": {
+                "name": "Ataque temerario",
+                "description": "Ventaja en ataques cuerpo a cuerpo durante el turno y concede ventaja a los que le atacan durante 1 ronda"
+            },
+            "RecklessAttackAdvantageOnAttacks": {
+                "name": "Ataque temerario (ventaja en ataques)",
+                "description": "Ventaja en ataques cuerpo a cuerpo hasta el final del turno"
+            },
+            "Reduce": {
+                "name": "Reducir",
+                "description": "Resta 1d4 al daño y desventaja en comprobaciones y salvaciones de Fuerza durante 1 minuto"
+            },
+            "Regenerate": {
+                "name": "Regeneración",
+                "description": "Recupera 1 punto de vida al inicio de cada turno durante 1 hora"
+            },
+            "ResilientSphere": {
+                "name": "Esfera resistente",
+                "description": "Inmunidad total al daño y movimiento a la mitad durante 1 minuto"
+            },
+            "Resistance": {
+                "name": "Resistencia",
+                "description": "Añade 1d4 a una única tirada de salvación en el próximo minuto"
+            },
+            "Restrained": {
+                "name": "Agarrado / Restringido",
+                "description": "- La velocidad de una criatura restringida es 0 y no puede beneficiarse de bonificaciones a la velocidad.<br/>- Las tiradas de ataque contra la criatura tienen ventaja y las tiradas de ataque de la criatura tienen desventaja.<br/>- Tiene desventaja en salvaciones de Destreza."
+            },
+            "RingOfResistance": {
+                "name": "Anillo de resistencia",
+                "description": "Elige entre resistencia a ácido, frío, fuego, fuerza, relámpago, necrótico, veneno, psíquico, radiante o trueno"
+            },
+            "RingOfAcidResistance": {
+                "name": "Anillo: resistencia al ácido",
+                "description": "Otorga resistencia al ácido"
+            },
+            "RingOfColdResistance": {
+                "name": "Anillo: resistencia al frío",
+                "description": "Otorga resistencia al frío"
+            },
+            "RingOfFireResistance": {
+                "name": "Anillo: resistencia al fuego",
+                "description": "Otorga resistencia al fuego"
+            },
+            "RingOfForceResistance": {
+                "name": "Anillo: resistencia a la fuerza",
+                "description": "Otorga resistencia al daño de fuerza"
+            },
+            "RingOfLightningResistance": {
+                "name": "Anillo: resistencia a rayos",
+                "description": "Otorga resistencia a rayos"
+            },
+            "RingOfNecroticResistance": {
+                "name": "Anillo: resistencia necrótica",
+                "description": "Otorga resistencia al daño necrótico"
+            },
+            "RingOfPoisonResistance": {
+                "name": "Anillo: resistencia a veneno",
+                "description": "Otorga resistencia al veneno"
+            },
+            "RingOfPsychicResistance": {
+                "name": "Anillo: resistencia psíquica",
+                "description": "Otorga resistencia al daño psíquico"
+            },
+            "RingOfRadiantResistance": {
+                "name": "Anillo: resistencia radiante",
+                "description": "Otorga resistencia al daño radiante"
+            },
+            "RingOfThunderResistance": {
+                "name": "Anillo: resistencia a trueno",
+                "description": "Otorga resistencia al daño por trueno"
+            },
+            "RingOfFreeAction": {
+                "name": "Anillo de acción libre",
+                "description": "Otorga inmunidad a las condiciones Paralizado y Agarrado"
+            },
+            "RingOfSwimming": {
+                "name": "Anillo de nado",
+                "description": "Otorga velocidad de nado de 40 pies"
+            },
+            "RingOfWarmth": {
+                "name": "Anillo de calor",
+                "description": "Otorga resistencia al frío"
+            },
+            "RobeOfEyes": {
+                "name": "Toga de ojos",
+                "description": "Ventaja en Percepción, aumenta visión en la oscuridad a 120 pies y visión verdadera a 120 pies"
+            },
+            "RobeOfStars": {
+                "name": "Toga de las estrellas",
+                "description": "Añade +1 a todas las tiradas de salvación"
+            },
+            "RobeOfTheArchmagi": {
+                "name": "Toga del Archimago",
+                "description": "Fija la CA a 15 + modificador de Destreza, ventaja en salvaciones contra conjuros y +2 a las tiradas de ataque y DCs de conjuros"
+            },
+            "Seizure": {
+                "name": "Convulsiones",
+                "description": "Desventaja en comprobaciones y salvaciones de Destreza y en ataques que usan Destreza durante 7 días"
+            },
+            "Sharpshooter": {
+                "name": "Tirador experto",
+                "description": "Resta 5 a los ataques a distancia pero añade 10 al daño a distancia"
+            },
+            "Shield": {
+                "name": "Escudo (conjuro)",
+                "description": "Añade +5 a la CA hasta el siguiente turno"
+            },
+            "ShieldOfFaith": {
+                "name": "Escudo de la fe",
+                "description": "Añade +2 a la CA durante 10 minutos"
+            },
+            "SlimyDoom": {
+                "name": "Fatalidad viscosa",
+                "description": "Desventaja en comprobaciones y salvaciones de Constitución durante 7 días"
+            },
+            "Slow": {
+                "name": "Lentitud",
+                "description": "Reduce la velocidad a la mitad y resta 2 a la CA y a las salvaciones de Destreza durante 1 minuto"
+            },
+            "SpeakWithAnimals": {
+                "name": "Hablar con los animales",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "SpeakWithDead": {
+                "name": "Hablar con los muertos",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "SpeakWithPlants": {
+                "name": "Hablar con las plantas",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "SpiderClimb": {
+                "name": "Trepar como araña",
+                "description": "Otorga velocidad de trepar igual a la de caminar durante 1 hora"
+            },
+            "SpiritGuardians": {
+                "name": "Guardianes espirituales",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "SpiritualWeapon": {
+                "name": "Arma espiritual",
+                "description": "Sin efectos activos y dura 1 minuto"
+            },
+            "Stoneskin": {
+                "name": "Piel de piedra",
+                "description": "Otorga resistencia al daño físico no mágico durante 1 hora"
+            },
+            "StoneOfGoodLuck": {
+                "name": "Piedra de buena suerte",
+                "description": "Añade +1 a todas las comprobaciones y salvaciones"
+            },
+            "Stunned": {
+                "name": "Aturdido",
+                "description": "- Una criatura aturdida está incapacitada, no puede moverse y habla con dificultad.<br/>- Falla automáticamente las salvaciones de Fuerza y Destreza.<br/>- Las tiradas de ataque contra la criatura tienen ventaja."
+            },
+            "Suggestion": {
+                "name": "Sugerencia",
+                "description": "Sin efectos activos y dura 8 horas"
+            },
+            "Telekinesis": {
+                "name": "Telequinesis",
+                "description": "Sin efectos activos y dura 10 minutos"
+            },
+            "Torch": {
+                "name": "Antorcha",
+                "description": "Añade luz de antorcha durante 1 hora (requiere ATL)"
+            },
+            "TrueStrike": {
+                "name": "Golpe certero",
+                "description": "Otorga ventaja en el siguiente ataque o hasta el final del siguiente turno"
+            },
+            "Unconscious": {
+                "name": "Inconsciente",
+                "description": "- Una criatura inconsciente está incapacitada, no puede moverse ni hablar y es inconsciente.<br/>- Deja caer lo que lleva y cae prono.<br/>- Falla automáticamente las salvaciones de Fuerza y Destreza.<br/>- Las tiradas de ataque contra la criatura tienen ventaja.<br/>- Cualquier ataque que golpee desde 5 pies es crítico."
+            },
+            "ViciousMockery": {
+                "name": "Burla cruel",
+                "description": "Provoca desventaja en el siguiente ataque o hasta el final del siguiente turno"
+            },
+            "WardingBond": {
+                "name": "Vínculo protector",
+                "description": "Añade +1 a la CA y a las tiradas de salvación y concede resistencia a todo daño durante 1 hora"
+            },
+            "WaterBreathing": {
+                "name": "Respirar bajo el agua",
+                "description": "Sin efectos activos y dura 24 horas"
+            },
+            "WaterWalk": {
+                "name": "Caminar sobre el agua",
+                "description": "Sin efectos activos y dura 1 hora"
+            },
+            "Wounded": {
+                "name": "Herido",
+                "description": "Sin efectos activos"
+            }
+        }
+    }
+}
