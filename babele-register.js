@@ -6,14 +6,14 @@ Hooks.once("init", () => {
     babele.register({
       module: "dnd-players-handbook",
       lang: "es",
-      dir: "translations/PHB24/es"
+      dir: "translations/PHB24"
     });
 
     // Registro de DFreds Convenient Effects
     babele.register({
       module: "dfreds-convenient-effects",
       lang: "es",
-      dir: "translations/CE/es"
+      dir: "translations/CE"
     });
   }
 });
