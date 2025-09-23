@@ -2,18 +2,18 @@ Hooks.once("init", () => {
   if (typeof Babele !== "undefined") {
     const babele = Babele.get();
 
-    // Registro del Player’s Handbook 2024
+    // Registro de dnd-players-handbook
     babele.register({
       module: "dnd-players-handbook",
       lang: "es",
-      dir: "translations/PHB24"
+      dir: "translations/dnd-players-handbook"
     });
 
-    // Registro de DFreds Convenient Effects
+    // Registro de dfreds-convenient-effects
     babele.register({
       module: "dfreds-convenient-effects",
       lang: "es",
-      dir: "translations/CE"
+      dir: "translations/dfreds-convenient-effects"
     });
   }
 });
